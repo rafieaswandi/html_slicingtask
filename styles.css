@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+h1 {
+    color: #252525;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px; /* 125% */
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+
+.left img {
+    margin: 0;
+    width: 716px;
+    height: 932px;
+}
+
+.right {
+    display: flex;
+    padding: 80px 112px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 88px;
+}
+
+.right.headline-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+button {
+    margin-top: 32px;
+    display: flex;
+    padding: 18px 48px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 16px;
+    background: #252525;
+    color: white;
+}
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .left img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .right {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    button {
+        padding: 14px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(Assests/livingroom.jpeg);
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .left img {
+        display: none;
+    }
+
+    .right {
+        padding: 20px;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    button {
+        padding: 12px 28px;
+    }
+
+    .headline-button, .text-list {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .right {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+
+    .text-list p {
+        font-size: 14px;
+    }
+
+    .headline-button, .text-list {
+        gap: 16px;
+    }
+}
